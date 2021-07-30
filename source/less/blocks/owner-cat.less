@@ -1,0 +1,30 @@
+.owner-cat__heading {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: @basic-black;
+}
+
+.owner-cat__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.owner-cat__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @special-dark-grey;
+  text-transform: uppercase;
+}
+
+.owner-cat__input {
+  &::placeholder {
+    font-family: "Oswald-regular", "Arial", sans-serif;
+    .owner-cat__label();
+  }
+
+  height: 45px;
+  box-sizing: border-box;
+}
