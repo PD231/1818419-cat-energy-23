@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo-img" href="index.html">
@@ -34,15 +35,14 @@
   <main class="page-main">
     <section class="promo">
       <div class="promo__wrapper">
-        <div class="promo__heading-position">
-          <h1 class="promo__heading">Фунцкциональное питание для котов</h1>
-        </div>
-        <div class="promo__phrase-position">
-          <p class="promo__phrase">Занялся собой? Займись котом!</p>
+        <div class="promo__cat-background">
+          <div class="promo__cat-background-fill">
+            <h1 class="promo__heading">Функциональное питание для котов</h1>
+            <p class="promo__phrase">Занялся собой? Займись котом!</p>
+          </div>
         </div>
         <div class="promo__picture">
-          <img src="img/main-picture.jpg" width="280" height="270"
-            alt="корм для котов Cat energy со вкусом курицы">
+          <img src="img/main-picture.png" width="280" height="270" alt="корм для котов Cat energy со вкусом курицы">
         </div>
         <div class="promo__button-position">
           <a class="promo__button" href="selection-form.html">Подобрать программу</a>
@@ -55,16 +55,16 @@
         <ul class="type-of-food__list">
           <li class="type-of-food__item">
             <h3 class="type-of-food__heading">Похудение</h3>
-              <p class="type-of-food__phrase">Ваш кот весит больше собаки и почти утратил способность лазить по
-                деревьям?
-                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="type-of-food__link" href="catalog.html">Каталог Slim</a>
+            <p class="type-of-food__phrase">Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="type-of-food__link" href="catalog.html">Каталог Slim</a>
           </li>
           <li class="type-of-food__item">
             <h3 class="type-of-food__heading">Набор массы</h3>
-              <p class="type-of-food__phrase">Заработать авторитет среди дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="type-of-food__link" href="catalog.html">Каталог Pro</a>
+            <p class="type-of-food__phrase">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="type-of-food__link" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -74,16 +74,16 @@
         <h2 class="advantages__heading">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">Функциональное питание
-              содержит только полезные питательные вещества.
+            содержит только полезные питательные вещества.
           </li>
           <li class="advantages__item">Выпускается в виде порошка,
-              который нужно лишь залить кипятком и готово.
+            который нужно лишь залить кипятком и готово.
           </li>
           <li class="advantages__item">Замените один-два приема
-              обычной еды на наше функциональное питание.
+            обычной еды на наше функциональное питание.
           </li>
           <li class="advantages__item">Уже через месяц наслаждайтесь
-              изменениями к лучшему вашего питомца!
+            изменениями к лучшему вашего питомца!
           </li>
         </ul>
       </div>
@@ -107,19 +107,20 @@
             </div>
             <div class="result-calculator__item">
               <dt class="result-calculator__number-string">15000 руб.</dt>
+              <!--В дальнейшем поменять местами flex-ом -->
               <dd class="result-calculator__description-string">Затраты на питание:</dd>
             </div>
           </dl>
         </div>
-        <img src="img/cat-fat.jpg" width="311" height="232" alt="изображение толстого кота Бориса">
-        <img src="img/cat-slim.jpg" width="251" height="240" alt="изображение худого кота Бориса">
-        <div class="for-example__change change">
-          <p class="change__name">Было</p>
-          <div class="change-wrapper">
-            <button class="change-wrapper__buttons change-wrapper__buttons--active" type="button"></button>
-            <button class="change-wrapper__buttons" type="button"></button>
+        <img src="img/cat-fat.png" width="311" height="232" alt="изображение толстого кота Бориса">
+        <img src="img/cat-slim.png" width="251" height="240" alt="изображение худого кота Бориса">
+        <div class="for-example__change change-slider">
+          <p class="change-slider__name">Было</p>
+          <div class="change-slider__buttons-wrapper">
+            <button class="change-slider__buttons change-slider__buttons--active" type="button"></button>
+            <button class="change-slider__buttons" type="button"></button>
           </div>
-          <p class="change__name">Стало</p>
+          <p class="change-slider__name">Стало</p>
         </div>
       </div>
     </section>
@@ -130,12 +131,10 @@
           <p class="text-info___address text-info__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="text-info___address text-info__city">Санкт-Петербург</p>
         </div>
-        <section class="contacts-modal-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.2094406549277!2d30.3235459!3d59.938701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627057628143!5m2!1sru!2sru"
-            width="320" height="362" allowfullscreen=""
-            title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
-        </section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.2094406549277!2d30.3235459!3d59.938701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627057628143!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen=""
+          title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
   </main>
@@ -144,25 +143,23 @@
       <a class="page-footer__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="128" height="24" alt="cat energy">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="img/icon-vkontakte.svg" width="23" height="16" alt="Наш Vkontakte">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
-              <img src="img/icon-instagram.svg" width="16" height="16" alt="Наш Instagram">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
-              <img src="img/icon-facebook.svg" width="22" height="22" alt="Наш FaceBook">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <img src="img/icon-vkontakte.svg" width="23" height="16" alt="Наш Vkontakte">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-instagram.svg" width="16" height="16" alt="Наш Instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-facebook.svg" width="22" height="22" alt="Наш FaceBook">
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -172,4 +169,5 @@
     </div>
   </footer>
 </body>
+
 </html>
