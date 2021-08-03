@@ -1,33 +1,95 @@
-.type-of-food {
-  width: 320px;
+.type-of-food__wrapper {
+  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: 707px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -150px;
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .type-of-food__list {
+  margin-top: 72px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 
 .type-of-food__item {
   list-style: none;
   background: @basic-grey;
-  padding: 0 33px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 374px;
+    margin: 0;
+    justify-content: center;
+  }
 }
 
 .type-of-food__heading {
+  min-height: 37px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
-  padding-top: 30px;
+  margin: 30px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 77px 0 24px 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 206px;
+    height: 36px;
+    margin-top: 77px;
+    margin-bottom: 73px;
+    align-self: center;
+  }
 }
 
 .type-of-food__phrase {
+  width: 227px;
+  min-height: 90px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: @special-dark-grey;
+  margin: 0;
+  margin-left: 20px;
+  border-bottom: 2px solid @border-grey-color;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 53px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    min-height: 96px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    height: 72px;
+    margin: 0 auto;
+  }
 }
 
 .type-of-food__link {
@@ -36,8 +98,14 @@
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
-  padding-bottom: 18px;
-  padding-top: 15px;
-  border-top: 1px solid @border-grey-color;
+  text-decoration: none;
   display: block;
+  align-self: flex-start;
+  margin: 15px 0 18px 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 53px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

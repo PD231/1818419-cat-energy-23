@@ -1,4 +1,29 @@
-.contacts {
+.contacts__wrapper {
   margin: 0 auto;
   width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+  }
+
+  iframe {
+    border: none;
+
+    @media (min-width: @tablet-width) {
+      min-width: @tablet-width;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: @desktop-width;
+      min-height: 400px;
+      margin-top: 75px;
+      position: relative;
+    }
+  }
 }
