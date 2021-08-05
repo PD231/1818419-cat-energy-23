@@ -1,6 +1,19 @@
-.advantages {
-  width: 320px;
+.advantages__wrapper {
+  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: 707px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .advantages__heading {
@@ -8,11 +21,36 @@
   line-height: 40px;
   font-weight: 400;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .advantages__list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .advantages__item {
@@ -21,8 +59,48 @@
   line-height: 18px;
   font-weight: 400;
   color: @special-dark-grey;
+  padding-left: 80px;
 
   &:not(:last-child) {
     padding-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 151px 29px 57px 0;
+    box-sizing: border-box;
+
+    &:first-child {
+      width: 230px;
+      min-height: 280px;
+      background-image: url("../img/number-1.png");
+      background-repeat: no-repeat;
+      background-position: top 40px right 30px;
+    }
+
+    &:nth-child(2) {
+      width: 246px;
+      min-height: 280px;
+      background-image: url("../img/number-2.png");
+      background-repeat: no-repeat;
+      background-position: top 40px right 20px;
+    }
+
+    &:nth-child(3) {
+      width: 247px;
+      min-height: 280px;
+      background-image: url("../img/number-3.png");
+      background-repeat: no-repeat;
+      background-position: top 40px right 20px;
+    }
+
+    &:last-child {
+      width: 249px;
+      min-height: 280px;
+      background-image: url("../img/number-4.png");
+      background-repeat: no-repeat;
+      background-position: top 40px right 10px;
+    }
   }
 }

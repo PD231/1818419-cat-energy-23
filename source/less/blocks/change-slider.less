@@ -1,5 +1,11 @@
 .change-slider {
+  width: 228px;
+  min-height: 40px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .change-slider__name {
@@ -8,4 +14,9 @@
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

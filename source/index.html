@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -10,22 +11,19 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-img" href="index.html">
-        <img src="img/logo-image.svg" width="33" height="37" alt="логотип cat energy">
-      </a>
       <a class="page-header__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="selection-form.html">Подбор программы</a>
           </li>
         </ul>
@@ -34,18 +32,16 @@
   </header>
   <main class="page-main">
     <section class="promo">
-      <div class="promo__wrapper">
-        <div class="promo__cat-background">
-          <div class="promo__cat-background-fill">
-            <h1 class="promo__heading">Функциональное питание для котов</h1>
-            <p class="promo__phrase">Занялся собой? Займись котом!</p>
+      <div class="promo__wrapper-fill">
+        <div class="promo__wrapper">
+          <h1 class="promo__heading">Функциональное питание для котов</h1>
+          <p class="promo__phrase">Занялся собой? Займись котом!</p>
+          <div class="promo__picture">
+            <img src="img/main-picture.png" width="280" height="270" alt="корм для котов Cat energy со вкусом курицы">
           </div>
-        </div>
-        <div class="promo__picture">
-          <img src="img/main-picture.png" width="280" height="270" alt="корм для котов Cat energy со вкусом курицы">
-        </div>
-        <div class="promo__button-position">
-          <a class="promo__button" href="selection-form.html">Подобрать программу</a>
+          <div class="promo__button-position">
+            <a class="promo__button" href="selection-form.html">Подобрать программу</a>
+          </div>
         </div>
       </div>
     </section>
@@ -107,20 +103,21 @@
             </div>
             <div class="result-calculator__item">
               <dt class="result-calculator__number-string">15000 руб.</dt>
-              <!--В дальнейшем поменять местами flex-ом -->
-              <dd class="result-calculator__description-string">Затраты на питание:</dd>
+              <dd class="result-calculator__description-string">Затраты на питание: </dd>
             </div>
           </dl>
         </div>
-        <img src="img/cat-fat.png" width="311" height="232" alt="изображение толстого кота Бориса">
-        <img src="img/cat-slim.png" width="251" height="240" alt="изображение худого кота Бориса">
-        <div class="for-example__change change-slider">
-          <p class="change-slider__name">Было</p>
-          <div class="change-slider__buttons-wrapper">
-            <button class="change-slider__buttons change-slider__buttons--active" type="button"></button>
-            <button class="change-slider__buttons" type="button"></button>
+        <div class="for-example__slider">
+          <img src="img/cat-fat.png" width="311" height="232" alt="изображение толстого кота Бориса">
+          <img src="img/cat-slim.png" width="251" height="240" alt="изображение худого кота Бориса">
+          <div class="for-example__change change-slider">
+            <p class="change-slider__name">Было</p>
+            <div class="change-slider__buttons-wrapper">
+              <button class="change-slider__buttons change-slider__buttons--active" type="button"></button>
+              <button class="change-slider__buttons" type="button"></button>
+            </div>
+            <p class="change-slider__name">Стало</p>
           </div>
-          <p class="change-slider__name">Стало</p>
         </div>
       </div>
     </section>
@@ -128,8 +125,10 @@
       <div class="contacts__wrapper">
         <div class="contacts-text-info text-info">
           <h2 class="text-info__heading">Приглашаем к сотрудничеству диллеров!</h2>
-          <p class="text-info___address text-info__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="text-info___address text-info__city">Санкт-Петербург</p>
+          <div class="text-info___address">
+            <p class="text-info__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="text-info__city">Санкт-Петербург</p>
+          </div>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.2094406549277!2d30.3235459!3d59.938701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627057628143!5m2!1sru!2sru"
@@ -143,26 +142,26 @@
       <a class="page-footer__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="128" height="24" alt="cat energy">
       </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item">
+          <a class="page-footer__socia-link" href="https://vk.com/htmlacademy">
             <img src="img/icon-vkontakte.svg" width="23" height="16" alt="Наш Vkontakte">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/htmlacademy">
+        <li class="page-footer__social-item">
+          <a class="page-footer__socia-link" href="https://www.instagram.com/htmlacademy">
             <img src="img/icon-instagram.svg" width="16" height="16" alt="Наш Instagram">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+        <li class="page-footer__social-item">
+          <a class="spage-footer__socia-link" href="https://www.facebook.com/htmlacademy">
             <img src="img/icon-facebook.svg" width="22" height="22" alt="Наш FaceBook">
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
         </a>
       </div>
