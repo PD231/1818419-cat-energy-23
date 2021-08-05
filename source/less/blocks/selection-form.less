@@ -1,6 +1,19 @@
-.selection-form {
+
+.selection-form__wrapper {
   margin: 0 auto;
   width: 320px;
+  border-top: 1px solid @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 110px;
+    box-sizing: border-box;
+  }
 }
 
 .selection-form__heading {
@@ -8,6 +21,23 @@
   line-height: 36px;
   font-weight: 400;
   color: @basic-black;
+  width: 260px;
+  min-height: 36px;
+  margin: 27px 0 37px 0;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 432px;
+    min-height: 60px;
+    padding: 0 70px;
+    margin: 65px 0 54px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .selection-form__phrase {
@@ -16,8 +46,42 @@
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
+  width: 226px;
+  min-height: 36px;
+  margin-bottom: 39px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    min-height: 60px;
+    padding: 0 70px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 323px;
+    margin-right: 700px;
+  }
 }
 
+.selection-form__button-position {
+  display: flex;
+  flex-direction: column;
+  margin: 34px 20px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 54px 0 72px 0;
+    flex-direction: row;
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
 
 .selection-form__button-send {
   background: @basic-green;
@@ -26,6 +90,22 @@
   line-height: 20px;
   font-weight: 400;
   color: @basic-white;
+  width: 280px;
+  min-height: 40px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 282px;
+    min-height: 52px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
 .selection-form__stats-legend {
@@ -34,4 +114,13 @@
   line-height: 16px;
   font-weight: 400;
   color: @basic-black;
+  margin-top: 21px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    justify-self: center;
+    padding-bottom: 20px;
+  }
 }

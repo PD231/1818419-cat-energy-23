@@ -1,3 +1,11 @@
+.contacts__wrapper--background {
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
+  }
+}
+
 .contacts__wrapper {
   margin: 0 auto;
   width: 320px;
@@ -11,19 +19,19 @@
   @media (min-width: @desktop-width) {
     min-width: @desktop-width;
   }
+}
 
-  iframe {
-    border: none;
+.contacts__wrapper iframe {
+  border: none;
 
-    @media (min-width: @tablet-width) {
-      min-width: @tablet-width;
-    }
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+  }
 
-    @media (min-width: @desktop-width) {
-      min-width: @desktop-width;
-      min-height: 400px;
-      margin-top: 75px;
-      position: relative;
-    }
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+    min-height: 400px;
+    margin-top: 75px;
+    position: relative;
   }
 }

@@ -1,6 +1,19 @@
 .main-catalog {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: 707px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    width: 1220px;
+  }
 }
 
 
@@ -9,10 +22,29 @@
   line-height: 36px;
   font-weight: 400;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-catalog__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }

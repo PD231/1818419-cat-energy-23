@@ -1,14 +1,54 @@
+.owner-cat {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
 .owner-cat__heading {
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: @basic-black;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .owner-cat__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
+  }
+}
+
+.owner-cat__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+  }
 }
 
 .owner-cat__label {
@@ -17,14 +57,28 @@
   font-weight: 400;
   color: @special-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .owner-cat__input {
+  flex-grow: 1;
+  height: 45px;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  margin-left: 10px;
+
   &::placeholder {
+    padding-left: 10px;
     font-family: "Oswald-regular", "Arial", sans-serif;
     .owner-cat__label();
   }
 
-  height: 45px;
-  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    height: 52px;
+    margin-bottom: 20px;
+  }
 }

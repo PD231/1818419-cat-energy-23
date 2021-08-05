@@ -3,6 +3,23 @@
   background-repeat: no-repeat;
   width: 280px;
   height: 289px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    background-repeat: repeat;
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .special-offer__phrase {
@@ -11,4 +28,11 @@
   line-height: 20px;
   font-weight: 400;
   color: @basic-white;
+  width: 161px;
+  min-height: 61px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 150px;
+  }
 }

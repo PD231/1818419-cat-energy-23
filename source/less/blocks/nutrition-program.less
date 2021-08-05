@@ -2,12 +2,36 @@
   border: none;
   border-top: 1px solid @border-grey-color;
   border-bottom: 1px solid @border-grey-color;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @border-grey-color;
+    width: 628px;
+    min-height: 200px;
+    margin: 0 70px;
+    box-sizing: border-box;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    margin: 0;
+    margin-left: 80px;
+  }
 }
 
 .nutrition-program__list {
+  min-height: 157px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .nutrition-program__label {
@@ -16,4 +40,9 @@
   font-weight: 400;
   color: @most-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

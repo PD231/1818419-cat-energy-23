@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -10,23 +11,20 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-img" href="index.html">
-        <img src="img/logo-image.svg" width="33" height="37" alt="логотип cat energy">
-      </a>
       <a class="page-header__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="index.html" class="main-nav__link main-nav__link--black">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link main-nav__link--black">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="selection-form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a href="selection-form.html" class="main-nav__link main-nav__link--black">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -37,7 +35,7 @@
       <div class="main-catalog__wrapper">
         <h1 class="main-catalog__heading">Каталог продукции</h1>
         <ul class="main-catalog__list">
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Pro 500 г.</a>
             </h2>
@@ -45,7 +43,7 @@
               <img src="img/nutrition-chikken-500.png" width="68" height="86"
                 alt="Корм для кошек со вкусом курицы 500 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">500 г.</dd>
@@ -59,9 +57,9 @@
                 <dd class="nutrition-info__description">700 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Pro 1000 г</a>
             </h2>
@@ -69,7 +67,7 @@
               <img src="img/nutrition-chikken-1000.png" width="84" height="101"
                 alt="Корм для кошек со вкусом курицы 1000 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">1000 г.</dd>
@@ -83,9 +81,9 @@
                 <dd class="nutrition-info__description">1000 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Pro 500 г</a>
             </h2>
@@ -93,7 +91,7 @@
               <img src="img/nutrition-fish-500.png" width="68" height="78"
                 alt="Корм для кошек со вкусом рыбы 500 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">500 г.</dd>
@@ -107,9 +105,9 @@
                 <dd class="nutrition-info__description">700 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Pro 1000 г</a>
             </h2>
@@ -117,7 +115,7 @@
               <img src="img/nutrition-fish-500.png" width="84" height="101"
                 alt="Корм для кошек со вкусом рыбы 1000 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">1000 г.</dd>
@@ -131,9 +129,9 @@
                 <dd class="nutrition-info__description">1000 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Slim 500 г</a>
             </h2>
@@ -141,7 +139,7 @@
               <img src="img/nutrition-buckwheat-500.png" width="68" height="78"
                 alt="Корм для кошек со вкусом гречки 500 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">500 г.</dd>
@@ -155,9 +153,9 @@
                 <dd class="nutrition-info__description">400 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Slim 1000 г</a>
             </h2>
@@ -165,7 +163,7 @@
               <img src="img/nutrition-buckwheat-1000.png" width="84" height="100"
                 alt="Корм для кошек со вкусом гречки 1000 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">1000 г.</dd>
@@ -179,10 +177,9 @@
                 <dd class="nutrition-info__description">700 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-
-          <li class="main-catalog__item goods-nutrition">
+          <li class="goods-nutrition">
             <h2 class="goods-nutrition__heading">
               <a class="goods-nutrition__link" href="catalog.html">Cat Energy Slim 500 г</a>
             </h2>
@@ -190,7 +187,7 @@
               <img src="img/nutrition-rice-500.png" width="72" height="84"
                 alt="Корм для кошек со вкусом риса 500 грамм">
             </a>
-            <dl class="goods-nutrition__info-list nutrition-info">
+            <dl class="nutrition-info">
               <div class="nutrition-info__item">
                 <dt class="nutrition-info__name">Масса</dt>
                 <dd class="nutrition-info__description">500 г.</dd>
@@ -204,14 +201,14 @@
                 <dd class="nutrition-info__description">400 Р.</dd>
               </div>
             </dl>
-            <button class="goods-nutrition__button button-order" type="button">Заказать</button>
+            <button class="button-order" type="button">Заказать</button>
           </li>
-          <li class="main-catalog__item goods-nutrition">
-            <h2 class="goods-nutrition__heading-show">
-              <a class="goods-nutrition__heading-show-link" href="catalog.html">Показать еще 100500 товаров</a>
+          <li class="goods-nutrition-show">
+            <h2 class="goods-nutrition-show__heading">
+              <a class="goods-nutrition-show-link__heading" href="catalog.html">Показать еще 100500 товаров</a>
             </h2>
-            <p class="goods-nutrition__comments-phrase">На самом деле вкусов гораздо больше!</p>
-            <button class="goods-nutrition__button-show" type="button">Показать все</button>
+            <p class="goods-nutrition-show__comments-phrase">На самом деле вкусов гораздо больше!</p>
+            <button class="goods-nutrition-show__button" type="button">Показать все</button>
           </li>
         </ul>
       </div>
@@ -269,11 +266,13 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <div class="contacts-text-info text-info">
+      <div class="contacts__wrapper contacts__wrapper--background">
+        <div class="text-info">
           <h2 class="text-info__heading">Приглашаем к сотрудничеству диллеров!</h2>
-          <p class="text-info___address text-info__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="text-info___address text-info__city">Санкт-Петербург</p>
+          <div class="text-info___address">
+            <p class="text-info__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="text-info__city">Санкт-Петербург</p>
+          </div>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.2094406549277!2d30.3235459!3d59.938701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627057628143!5m2!1sru!2sru"
@@ -287,26 +286,26 @@
       <a class="page-footer__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="128" height="24" alt="cat energy">
       </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item">
+          <a class="page-footer__socia-link" href="https://vk.com/htmlacademy">
             <img src="img/icon-vkontakte.svg" width="23" height="16" alt="Наш Vkontakte">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/htmlacademy">
+        <li class="page-footer__social-item">
+          <a class="page-footer__socia-link" href="https://www.instagram.com/htmlacademy">
             <img src="img/icon-instagram.svg" width="16" height="16" alt="Наш Instagram">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+        <li class="page-footer__social-item">
+          <a class="page-footer__socia-link" href="https://www.facebook.com/htmlacademy">
             <img src="img/icon-facebook.svg" width="22" height="22" alt="Наш FaceBook">
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
         </a>
       </div>
