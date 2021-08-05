@@ -64,8 +64,13 @@
 }
 
 .supplements__button {
-  width: 632px;
+  width: 280px;
   min-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+    min-height: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 244px;
