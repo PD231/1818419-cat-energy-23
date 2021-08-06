@@ -1,12 +1,37 @@
+.enter-value {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .enter-value__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 569px;
+  }
 }
 
 .enter-value__form {
   height: 46px;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .enter-value__label {
@@ -15,13 +40,26 @@
   font-weight: 400;
   color: @special-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .enter-value__input {
+  height: 45px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  margin-left: 10px;
+
   &::placeholder {
+    padding-left: 10px;
     font-family: "Oswald-regular", "Arial", sans-serif;
     .enter-value__label();
   }
-  height: 45px;
-  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
 }

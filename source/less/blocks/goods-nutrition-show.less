@@ -1,0 +1,78 @@
+
+.goods-nutrition-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @dark-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+
+.goods-nutrition-show__heading {
+  @media (min-width: @tablet-width) {
+    width: 144px;
+    min-height: 44px;
+    text-align: center;
+  }
+}
+
+.goods-nutrition-show-link__heading {
+  text-decoration: none;
+  color: @basic-black;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+
+.goods-nutrition-show__comments-phrase {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    min-height: 36px;
+    text-align: center;
+  }
+}
+
+.goods-nutrition-show__button {
+  font-family: "Oswald-regular", "Arial", sans-serif;
+  background: @basic-grey;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @special-dark-grey;
+  width: 280px;
+  min-height: 40px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
+}
