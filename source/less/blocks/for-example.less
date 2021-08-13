@@ -1,13 +1,13 @@
 .for-example {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background: @basic-grey;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
-    width: 707px;
+    min-width: 768px;
     border-top: 1px solid @dark-grey;
-    background: linear-gradient(@basic-white 65%, @basic-grey 35%);
+    background: linear-gradient(@basic-white 58%, @basic-grey 43%);
   }
 
   @media (min-width: @desktop-width) {
@@ -22,12 +22,16 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    max-width: 93%;
+    min-height: 619px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px;
+    margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -36,12 +40,14 @@
   line-height: 40px;
   font-weight: 400;
   color: @basic-black;
+  padding-top: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-top: 43px;
     margin-bottom: 63px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,17 +72,65 @@
     width: 436px;
     min-height: 96px;
     grid-column: 1;
+    margin-top: 50px;
   }
 }
 
 
 .for-example__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 690px;
-    min-height: 656px;
-    padding-top: 100px;
-    box-sizing: border-box;
+    width: 708px;
+    min-height: 620px;
     grid-column: 2;
     grid-row: 2/-1;
+  }
+}
+
+.for-example__window-slider {
+  width: 354px;
+  overflow: hidden;
+}
+
+
+.for-example__img-fat-cat {
+  width: 311px;
+  height: 232px;
+  position: relative;
+  left: 0;
+  top: 5px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+    height: 476px;
+    padding-top: 50px;
+    left: 60px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.for-example__img-slim-cat {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 566px;
+    height: 476px;
+    position: relative;
+    right: 260px;
   }
 }
