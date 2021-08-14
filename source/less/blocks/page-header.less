@@ -1,25 +1,32 @@
+.page-header {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .page-header__wrapper {
-  width: 320px;
-  min-height: 38px;
+  min-width: 310px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 707px;
-    min-height: 52px;
-    padding: 26px 30px 0 30px;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1220px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    min-height: 117px;
     padding: 0 110px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 1220px;
+    width: 1220px;
   }
 }
 
@@ -29,16 +36,62 @@
   align-self: center;
   box-sizing: border-box;
 
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/logo-image.svg");
+    width: 33px;
+    height: 37px;
+    top: 10px;
+    left: 20px;
+  }
+
   @media (min-width: @tablet-width) {
+    height: 76px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 174px;
-    min-height: 52px;
-    padding-left: 73px;
+    padding-left: 70px;
+    padding-top: 25px;
+
+
+    &::before {
+      top: 30px;
+      left: 45px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 202px;
-    min-height: 59px;
-    padding-top: 10px;
+    padding: 0;
+    padding-top: 35px;
     align-self: flex-end;
+    margin-left: 43px;
+
+    &::before {
+      top: 50px;
+      left: 120px;
+      width: 59px;
+      height: 59px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.page-header__logo-name img {
+  @media (min-width: @desktop-width) {
+    width: 120px;
+    height: 90px;
   }
 }
