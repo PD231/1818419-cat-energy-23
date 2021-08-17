@@ -147,6 +147,12 @@
   }
 }
 
+.main-nav__item--active--color {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @basic-green;
+  }
+}
+
 .main-nav__link {
   display: flex;
   justify-content: center;
@@ -168,5 +174,17 @@
 
   @media (min-width: @desktop-width) {
     color: @basic-white;
+  }
+}
+
+.main-nav__link--color {
+  color: @basic-black;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }

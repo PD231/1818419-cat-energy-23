@@ -1,11 +1,11 @@
 .nutrition-info {
-  grid-column: 2;
-  grid-row: 1;
-  margin-top: 50px;
+  padding-top: 12px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -23,7 +23,7 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    width: 252px;
+    width: 100%;
     font-size: 16px;
     line-height: 16px;
     padding-bottom: 9px;
@@ -32,6 +32,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 180px;
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 9px;
   }
 }

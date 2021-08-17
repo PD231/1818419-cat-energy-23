@@ -3,20 +3,23 @@
   border-top: 1px solid @border-grey-color;
   border-bottom: 1px solid @border-grey-color;
   padding: 0;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid @border-grey-color;
-    width: 628px;
+    min-width: 628px;
     min-height: 200px;
     margin: 0 70px;
     box-sizing: border-box;
+    margin-top: 70px;
   }
 
-
   @media (min-width: @desktop-width) {
-    width: 568px;
+    min-width: 568px;
     margin: 0;
-    margin-left: 80px;
+    margin-right: 92px;
+    min-height: 198px;
+    height: 100%;
   }
 }
 
@@ -27,12 +30,14 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
+    min-height: 198px;
   }
 }
+
 
 .nutrition-program__label {
   font-size: 16px;
@@ -40,9 +45,85 @@
   font-weight: 400;
   color: @most-dark-grey;
   text-transform: uppercase;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 45px;
+  margin-bottom: 0;
+  min-height: 20px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 30px;
+    margin-left: 35px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 28px;
+    margin-left: 35px;
+  }
+}
+
+.nutrition-program__form:not(:first-child) .nutrition-program__label {
+  margin-top: 23px;
+}
+
+.nutrition-program__label::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  border: 2px solid @dark-grey;
+  border-radius: 50%;
+  left: -47px;
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+    left: -59px;
+    top: -4px;
+  }
+}
+
+.nutrition-program__input:checked + .nutrition-program__label::before {
+  position: absolute;
+  content: "";
+  background: @basic-green;
+  border: 12px solid @basic-white;
+  width: 14px;
+  height: 14px;
+  left: -50px;
+  top: -13px;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: -60px;
+    top: -6px;
+  }
+}
+
+.nutrition-program__input:checked + .nutrition-program__label::after {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  border: 2px solid @dark-grey;
+  border-radius: 50%;
+  left: -47px;
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+    left: -59px;
+    top: -4px;
+  }
+}
+
+.nutrition-program__input:disabled + .nutrition-program__label {
+  opacity: 0.3;
 }
