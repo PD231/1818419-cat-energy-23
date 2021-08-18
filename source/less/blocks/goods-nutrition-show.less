@@ -2,11 +2,35 @@
 .goods-nutrition-show {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  min-height: 208px;
+  position: relative;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    top: 45px;
+    width: 30px;
+    height: 2px;
+    background-color: @basic-grey;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
 
   @media (min-width: @tablet-width) {
-    border: 1px solid @dark-grey;
+    border: 2px solid @dark-grey;
+    min-height: 429px;
+    margin-top: 80px;
+
+    &::after,
+    &::before {
+      top: 85px;
+      width: 60px;
+      height: 3px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -14,12 +38,19 @@
   }
 }
 
-
 .goods-nutrition-show__heading {
+  margin: 0;
+  margin-top: 78px;
+
   @media (min-width: @tablet-width) {
     width: 144px;
     min-height: 44px;
     text-align: center;
+    margin-top: 159px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 145px;
   }
 }
 
@@ -30,6 +61,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -44,6 +76,9 @@
   line-height: 16px;
   font-weight: 400;
   color: @special-dark-grey;
+  margin: 0;
+  display: block;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -51,6 +86,7 @@
     width: 167px;
     min-height: 36px;
     text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -62,17 +98,32 @@
   line-height: 20px;
   font-weight: 400;
   color: @special-dark-grey;
-  width: 280px;
+  min-width: 88%;
   min-height: 40px;
   text-transform: uppercase;
+  margin-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    width: 249px;
+    margin-top: 85px;
+    min-width: 80%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 169px;
+    min-width: 170px;
+    margin-top: 90px;
+  }
+
+  &:hover {
+    background-color: @dark-grey;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }

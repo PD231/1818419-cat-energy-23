@@ -4,9 +4,58 @@
   font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
+  margin-left: 45px;
+  display: block;
+  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin: 0;
+    text-align: start;
+    margin-left: 59px;
+    min-height: 40px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    margin-left: 60px;
+  }
+}
+
+.additionally-select__input:checked + .additionally-select__label::before {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-done.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.additionally-select__label::before {
+  position: absolute;
+  content: "";
+  border: 1px solid @dark-grey;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+.additionally-select__input:disabled + .additionally-select__label {
+  opacity: 0.3;
 }

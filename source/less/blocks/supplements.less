@@ -1,17 +1,24 @@
 .supplements {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid @basic-grey;
+  min-height: 127px;
 
   @media (min-width: @tablet-width) {
-    padding: 20px 40px;
+    padding: 0 40px;
     border: 1px solid @dark-grey;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 139px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    min-height: 73px;
+    padding: 0;
   }
 }
 
@@ -22,14 +29,33 @@
   color: @most-dark-grey;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    min-height: 10px;
+    margin-top: 26px;
   }
 
   @media (min-width: @desktop-width) {
     width: 244px;
+    margin-top: 25px;
+    margin-right: 40px;
+  }
+}
+
+.supplements__info {
+  @media (min-width: @tablet-width) {
+    min-width: 150px;
+    justify-self: flex-end;
+    min-height: 10px;
+    margin: 0;
+    margin-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
   }
 }
 
@@ -43,36 +69,49 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-right: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
 .supplements__item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   @media (min-width: @desktop-width) {
-    width: 290px;
+    min-width: 278px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .supplements__description {
-  .supplements__name ();
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: @special-dark-grey;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
 
 .supplements__button {
-  width: 280px;
+  min-width: 280px;
   min-height: 40px;
 
   @media (min-width: @tablet-width) {
-    width: 632px;
+    min-width: 100%;
     min-height: 40px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 244px;
+    min-width: 244px;
+    margin-top: 15px;
   }
 }

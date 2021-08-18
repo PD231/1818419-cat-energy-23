@@ -1,19 +1,46 @@
 .goods-nutrition {
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 50% 50%;
   border-bottom: 1px solid @basic-grey;
-  padding-top: 20px;
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid @basic-grey;
+  min-width: 280px;
+  min-height: 208px;
+  box-sizing: border-box;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: @basic-grey;
+    background: linear-gradient(to top, @basic-grey 85%, @basic-white 15%);
+    min-width: 324px;
+    min-height: 510px;
+    padding-top: 0;
+    flex-grow: 0;
+    border-top: none;
   }
 
   @media (min-width: @desktop-width) {
-    width: 245px;
+    min-width: 245px;
+    margin-bottom: 5px;
   }
+}
+
+.goods-nutrition:nth-child(3) img {
+  margin-top: 15px;
+}
+
+.goods-nutrition:nth-child(5) img {
+  margin-top: 25px;
+}
+
+.goods-nutrition:nth-child(6) img {
+  margin-top: 15px;
+}
+
+.goods-nutrition:nth-child(7) img {
+  margin-top: 25px;
 }
 
 .goods-nutrition__image-wrapper {
@@ -26,22 +53,54 @@
   grid-row: 1/2;
 
   @media (min-width: @tablet-width) {
-    width: 161px;
-    min-height: 172px;
+    width: 168px;
+    min-height: 200px;
+    align-items: flex-end;
     order: -1;
   }
 }
 
-.goods-nutrition__heading {
-  width: 76px;
-  min-height: 41px;
-  margin: 0;
+
+.goods-nutrition__text-wrapper {
   grid-column: 2;
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 112px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 88%;
+    min-height: 157px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+  }
+}
+
+.goods-nutrition img {
+  @media (min-width: @tablet-width) {
+    width: 80%;
+    min-height: 80%;
+  }
+}
+
+.goods-nutrition__heading {
+  width: 70%;
+  height: min-content;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     width: 174px;
     min-height: 41px;
+    align-self: center;
+    margin-left: 30px;
+    margin-top: 45px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 38px;
   }
 }
 
@@ -54,6 +113,7 @@
   text-decoration: none;
   text-transform: uppercase;
   display: block;
+
 
   @media (min-width: @tablet-width) {
     width: 144px;
