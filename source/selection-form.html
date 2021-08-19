@@ -11,10 +11,17 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
+      <a class="page-header__logo-img" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
+          <img src="img/logo-image.svg" width="33" height="37" alt="cat energy">
+        </picture>
+      </a>
       <a class="page-header__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--no-js">
+      <nav class="main-nav main-nav--opened main-nav--no-js">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -23,7 +30,7 @@
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link main-nav__link--color">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active main-nav__item--active--color">
+          <li class="main-nav__item main-nav__item--active main-nav__item--color">
             <a href="selection-form.html" class="main-nav__link main-nav__link--color">Подбор программы</a>
           </li>
         </ul>
@@ -169,7 +176,7 @@
       </a>
       <ul class="page-footer__social">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+          <a class="page-footer__social-link" href="https://vk.com/htmlacademy" aria-label="наш vkontakte">
             <svg aria-hidden="true" width="23" height="16" viewBox="0 0 23 13" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -179,7 +186,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
+          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy" aria-label="наш instagram">
             <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -189,7 +196,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
+          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy" aria-label="наш facebook">
             <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
