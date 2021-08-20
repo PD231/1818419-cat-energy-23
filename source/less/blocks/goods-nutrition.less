@@ -1,11 +1,13 @@
 .goods-nutrition {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 112px 40px;
+  row-gap: 12px;
   border-bottom: 1px solid @basic-grey;
   padding: 20px 20px 0 20px;
   border-top: 1px solid @basic-grey;
   min-width: 280px;
-  min-height: 208px;
+  min-height: 209px;
   box-sizing: border-box;
 
 
@@ -18,7 +20,7 @@
     min-height: 510px;
     padding-top: 0;
     flex-grow: 0;
-    border-top: none;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,21 +29,6 @@
   }
 }
 
-.goods-nutrition:nth-child(3) img {
-  margin-top: 15px;
-}
-
-.goods-nutrition:nth-child(5) img {
-  margin-top: 25px;
-}
-
-.goods-nutrition:nth-child(6) img {
-  margin-top: 15px;
-}
-
-.goods-nutrition:nth-child(7) img {
-  margin-top: 25px;
-}
 
 .goods-nutrition__image-wrapper {
   width: 140px;
@@ -58,15 +45,31 @@
     align-items: flex-end;
     order: -1;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 172px;
+    height: 196px;
+  }
 }
 
+.goods-nutrition__image-wrapper img {
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
 
 .goods-nutrition__text-wrapper {
   grid-column: 2;
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  min-height: 112px;
+  height: min-content;
 
   @media (min-width: @tablet-width) {
     min-width: 88%;
@@ -78,12 +81,6 @@
   }
 }
 
-.goods-nutrition img {
-  @media (min-width: @tablet-width) {
-    width: 80%;
-    min-height: 80%;
-  }
-}
 
 .goods-nutrition__heading {
   width: 70%;
@@ -95,12 +92,14 @@
     min-height: 41px;
     align-self: center;
     margin-left: 30px;
-    margin-top: 45px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 38px;
+    margin-top: 27px;
+    margin-left: 33px;
+    margin-bottom: 8px;
   }
 }
 

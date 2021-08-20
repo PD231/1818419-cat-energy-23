@@ -36,16 +36,6 @@
   align-self: center;
   box-sizing: border-box;
 
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/logo-image.svg");
-    width: 33px;
-    height: 37px;
-    top: 10px;
-    left: 20px;
-  }
-
   @media (min-width: @tablet-width) {
     height: 76px;
     padding: 0;
@@ -56,12 +46,6 @@
     width: 174px;
     padding-left: 70px;
     padding-top: 25px;
-
-
-    &::before {
-      top: 30px;
-      left: 45px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -70,14 +54,6 @@
     padding-top: 35px;
     align-self: flex-end;
     margin-left: 43px;
-
-    &::before {
-      top: 50px;
-      left: 120px;
-      width: 59px;
-      height: 59px;
-      background-repeat: no-repeat;
-    }
   }
 
   &:hover {
@@ -86,6 +62,40 @@
 
   &:active {
     opacity: 0.4;
+  }
+}
+
+.page-header__logo-img {
+  width: 33px;
+  height: 37px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 50px;
+    top: 25px;
+    left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+    height: 60px;
+    top: 53px;
+    left: 110px;
+  }
+}
+
+.page-header__logo-img img {
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+    height: 60px;
   }
 }
 

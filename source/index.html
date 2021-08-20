@@ -5,12 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/152.svg">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
+      <a class="page-header__logo-img" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
+          <img src="img/logo-image.svg" width="33" height="37" alt="cat energy">
+        </picture>
+      </a>
       <a class="page-header__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
@@ -37,7 +47,14 @@
           <h1 class="promo__heading">Функциональное питание для котов</h1>
           <p class="promo__phrase">Занялся собой? Займись котом!</p>
           <div class="promo__picture">
-            <img src="img/main-picture.png" width="280" height="270" alt="корм для котов Cat energy со вкусом курицы">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/main-picture-desktop.png 1x, img/main-picture-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/main-picture-tablet.png 1x, img/main-picture-tablet@2x.png 2x">
+              <img src="img/main-picture.png" srcset="img/main-picture@2x.png 2x" width="280" height="270"
+                alt="корм для котов Cat energy со вкусом курицы">
+            </picture>
           </div>
           <div class="promo__button-position">
             <a class="promo__button" href="selection-form.html">Подобрать программу</a>
@@ -110,18 +127,24 @@
         </div>
         <div class="for-example__slider">
           <div class="for-example__window-slider">
-            <img class="for-example__img-fat-cat" src="img/cat-fat.png" width="311" height="232"
-              alt="изображение толстого кота Бориса">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet-desktop.png 1x, img/cat-fat-tablet-desktop@2x.png 2x">
+              <img class="for-example__img-fat-cat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="311"
+                height="232" alt="изображение толстого кота Бориса">
+            </picture>
           </div>
           <div class="for-example__window-slider">
-            <img class="for-example__img-slim-cat" src="img/cat-slim.png" width="251" height="240"
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-slim-tablet-desktop.png 1x, img/cat-slim-tablet-desktop@2x.png 2x">
+            <img class="for-example__img-slim-cat" src="img/cat-slim.png" srcset="img/cat-slim@2x.png 2x" width="251" height="240"
               alt="изображение худого кота Бориса">
+            </picture>
           </div>
           <div class="for-example__change change-slider">
             <label class="change-slider__name" for="slider_before">Было</label>
             <div class="change-slider__buttons-wrapper">
-              <button class="change-slider__buttons change-slider__buttons--active change-slider__buttons--range" id="slider_before" type="button"
-                aria-label="увидеть изображение толстого кота"></button>
+              <button class="change-slider__buttons change-slider__buttons--active change-slider__buttons--range"
+                id="slider_before" type="button" aria-label="увидеть изображение толстого кота"></button>
               <button class="change-slider__buttons change-slider__buttons--disabled" id="slider_after" type="button"
                 aria-label="увидеть изображение худого кота"></button>
             </div>
@@ -153,7 +176,7 @@
       </a>
       <ul class="page-footer__social">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+          <a class="page-footer__social-link" href="https://vk.com/htmlacademy" aria-label="наш vkontakte">
             <svg aria-hidden="true" width="23" height="16" viewBox="0 0 23 13" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -163,7 +186,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
+          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy" aria-label="наш instagram">
             <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -173,7 +196,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
+          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy" aria-label="наш facebook">
             <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
