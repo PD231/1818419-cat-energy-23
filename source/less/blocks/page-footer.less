@@ -116,12 +116,20 @@
   }
 }
 
-.page-footer__social-link:hover path {
-  stroke: @basic-green;
+.page-footer__social-icon {
+  fill: none;
 }
 
-.page-footer__social-link:active path {
-  opacity: 0.3;
+.page-footer__social-link {
+  color: @special-dark-grey-logo;
+}
+
+.page-footer__social-link:hover {
+  color: @basic-green;
+}
+
+.page-footer__social-link:active {
+  opacity: 0.5;
 }
 
 .page-footer__copyright {
@@ -169,10 +177,14 @@
   }
 }
 
-.page-footer__copyright-logo:hover path {
-  fill: @basic-green;
+.page-footer__copyright-logo {
+  color: @special-dark-grey-logo;
 }
 
-.page-footer__copyright-logo:active path {
+.page-footer__copyright-logo:hover {
+  color: @basic-green;
+}
+
+.page-footer__copyright-logo:active {
   opacity: 0.3;
 }

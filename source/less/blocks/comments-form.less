@@ -89,15 +89,20 @@
   margin-right: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 631px;
+    min-width: 631px;
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    min-width: 1220px;
+    max-width: 1220px;
     padding-top: 10px;
     padding-left: 17px;
   }
+}
+
+.comments-form__text:focus {
+  outline: 1px solid @basic-black;
 }
