@@ -177,13 +177,18 @@
   }
 }
 
-.owner-cat__input:focus + svg path,
-.owner-cat__input:focus + svg line {
-  stroke: @basic-green;
+
+.owner-cat__input:focus + .owner-cat__icon-mail,
+.owner-cat__input:focus + .owner-cat__icon-phone {
+  color: @basic-green;
+  fill: none;
 }
 
 
-.owner-cat__item svg {
+.owner-cat__icon-mail,
+.owner-cat__icon-phone {
+  color: @basic-black;
+  fill: none;
   position: absolute;
   top: 25px;
   right: 35px;
@@ -194,7 +199,7 @@
   }
 }
 
-.owner-cat__item:last-child svg {
+.owner-cat__icon-phone {
   @media (min-width: @tablet-width) {
     top: 37px;
   }
@@ -205,8 +210,9 @@
 }
 
 .owner-cat__input--no-valid,
-.owner-cat__input--no-valid + svg path,
-.owner-cat__input--no-valid + svg line {
+.owner-cat__input--no-valid + .owner-cat__icon-mail,
+.owner-cat__input--no-valid + .owner-cat__icon-phone {
   border-color: @color-required;
-  stroke: @color-required;
+  color: @color-required;
+  fill: none;
 }
