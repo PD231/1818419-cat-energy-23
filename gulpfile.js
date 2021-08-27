@@ -122,25 +122,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/js/navigation.js", gulp.series("navigation_script"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
-
-exports.default = gulp.series(
-  clean,
-  copy,
-  copyImages,
-  gulp.parallel(
-    styles,
-    html,
-    navigation_script,
-    createWebp
-    ),
-    gulp.series(
-      server,
-      watcher)
-)
-
 
 /* Build */
 
@@ -154,6 +137,21 @@ const build = gulp.series (
     navigation_script,
     createWebp
     ),
-  )
+  );
 
   exports.build = build;
+
+  exports.default = gulp.series(
+    clean,
+    copy,
+    copyImages,
+    gulp.parallel(
+      styles,
+      html,
+      navigation_script,
+      createWebp
+      ),
+      gulp.series(
+        server,
+        watcher
+    ));
