@@ -139,7 +139,7 @@ exports.default = gulp.series(
     gulp.series(
       server,
       watcher)
-);
+)
 
 
 /* Build */
@@ -154,6 +154,6 @@ const build = gulp.series (
     navigation_script,
     createWebp
     ),
-  );
+  )
 
   exports.build = build;
