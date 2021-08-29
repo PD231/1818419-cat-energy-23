@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/152.svg">
-  <link href="css/style.min.css" rel="stylesheet" type="text/css">
+  <link rel="preload" href="css/style.min.css" as="style" type="text/css">
 </head>
 
 <body class="page-body">
@@ -138,7 +138,7 @@
               <source type="image-webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/cat-fat-tablet-desktop.png 1x, img/cat-fat-tablet-desktop@2x.png 2x">
-              <img class="for-example__img-fat-cat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="311"
+              <img loading="lazy" class="for-example__img-fat-cat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="311"
                 height="232" alt="изображение толстого кота Бориса">
             </picture>
           </div>
@@ -149,7 +149,7 @@
               <source type="image-webp" srcset="img/cat-slim.webp 1x, img/cat-slim@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/cat-slim-tablet-desktop.png 1x, img/cat-slim-tablet-desktop@2x.png 2x">
-              <img class="for-example__img-slim-cat" src="img/cat-slim.png" srcset="img/cat-slim@2x.png 2x" width="251"
+              <img loading="lazy" class="for-example__img-slim-cat" src="img/cat-slim.png" srcset="img/cat-slim@2x.png 2x" width="251"
                 height="240" alt="изображение худого кота Бориса">
             </picture>
           </div>
