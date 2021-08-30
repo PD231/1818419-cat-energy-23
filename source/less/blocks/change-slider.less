@@ -41,6 +41,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &:hover {
+      border-bottom: 2px solid @special-dark-grey;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -97,5 +101,16 @@
     border: 12px solid @basic-white;
     top: -10px;
     left: 188px;
+    box-shadow: 0 0 1px 0 @special-dark-grey-logo;
+    cursor: pointer;
+
+
+    &:hover {
+      box-shadow: 0 0 2px 0 @special-dark-grey-logo;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px @basic-green;
+    }
   }
 }

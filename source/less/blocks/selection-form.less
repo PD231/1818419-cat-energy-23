@@ -109,10 +109,19 @@
     line-height: 20px;
     width: 282px;
     min-height: 52px;
+    cursor: pointer;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
+  }
+
+  &:hover {
+    background-color: @hover-basic-green;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 
