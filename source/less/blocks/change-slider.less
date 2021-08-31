@@ -45,6 +45,10 @@
     &:hover {
       border-bottom: 2px solid @special-dark-grey;
     }
+
+    &:active {
+      border: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -65,10 +69,11 @@
   border-radius: 10px;
 
   @media (min-width: @tablet-width) {
-    min-width: 428px;
+    min-width: 420px;
     height: 6px;
     background-color: @dark-grey;
     position: relative;
+    left: -10px;
   }
 }
 
@@ -99,8 +104,8 @@
     border-radius: 100px;
     position: absolute;
     border: 12px solid @basic-white;
-    top: -10px;
-    left: 188px;
+    top: -12px;
+    left: 192px;
     box-shadow: 0 0 1px 0 @special-dark-grey-logo;
     cursor: pointer;
 
