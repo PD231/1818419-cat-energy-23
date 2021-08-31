@@ -16,6 +16,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
+
       <a class="page-header__logo-img" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
@@ -26,6 +27,7 @@
       <a class="page-header__logo-name" href="index.html">
         <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
+
       <nav class="main-nav main-nav--opened main-nav--no-js">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -141,7 +143,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/cat-fat-tablet-desktop.png 1x, img/cat-fat-tablet-desktop@2x.png 2x">
               <img loading="lazy" class="for-example__img-fat-cat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="311"
-                height="232" alt="изображение толстого кота Бориса">
+                height="232" alt="изображение толстого кота Бориса" tabindex="0">
             </picture>
           </div>
           <div class="for-example__window-slider">
@@ -156,14 +158,14 @@
             </picture>
           </div>
           <div class="for-example__change change-slider">
-            <label class="change-slider__name" for="slider_before">Было</label>
+            <label class="change-slider__name" for="slider_before" tabindex="0">Было</label>
             <div class="change-slider__buttons-wrapper">
               <button class="change-slider__buttons change-slider__buttons--active change-slider__buttons--range"
-                id="slider_before" type="button" aria-label="увидеть изображение толстого кота"></button>
+                id="slider_before" type="button" aria-label="изменить изображение кота"></button>
               <button class="change-slider__buttons change-slider__buttons--disabled" id="slider_after" type="button"
-                aria-label="увидеть изображение худого кота"></button>
+                aria-label="изменить изображение кота"></button>
             </div>
-            <label class="change-slider__name" for="slider_after">Стало</label>
+            <label class="change-slider__name" for="slider_after" tabindex="0">Стало</label>
           </div>
         </div>
       </div>

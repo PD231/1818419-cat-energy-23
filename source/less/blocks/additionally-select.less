@@ -36,8 +36,14 @@
   left: 0;
 
   @media (min-width: @tablet-width) {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 38px;
+    height: 38px;
+    top: -5px;
   }
 }
 
@@ -51,12 +57,25 @@
   left: 0;
 
   @media (min-width: @tablet-width) {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
+    top: -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 38px;
+    height: 38px;
+    top: -5px;
   }
 }
 
 
 .additionally-select__input:disabled + .additionally-select__label {
   opacity: 0.3;
+}
+
+
+.additionally-select__input:hover + .additionally-select__label::after,
+.additionally-select__label:hover::before {
+  border-color: @border-label-color-hover;
 }
