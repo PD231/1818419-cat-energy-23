@@ -10,9 +10,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
     box-sizing: border-box;
-    margin-bottom: 80px;
+    margin-bottom: 83px;
   }
 }
 
@@ -36,9 +35,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 80px;
     padding: 0 110px;
+    width: @desktop-width;
+    box-sizing: border-box;
   }
 }
 
@@ -63,9 +64,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 55px;
     padding: 0 110px;
+    width: @desktop-width;
+    box-sizing: border-box;
   }
 }
 
@@ -74,21 +77,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 14px 20px 30px 20px;
+  margin: 0 20px 34px 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 28px;
     justify-content: space-between;
     padding: 0 70px;
     width: 68%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 58%;
+    width: 1220px;
     padding: 0 110px;
-    margin-top: 35px;
+    margin: 0 auto;
+    margin-top: 25px;
+    justify-content: start;
   }
 }
 
@@ -114,6 +119,7 @@
 
   @media (min-width: @desktop-width) {
     width: 568px;
+    margin-right: 82px;
   }
 
   &:hover {

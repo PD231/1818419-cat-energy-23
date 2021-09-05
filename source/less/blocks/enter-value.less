@@ -1,9 +1,20 @@
 .enter-value {
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 70px;
+  }
+}
+
+.enter-value__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: @desktop-width;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 

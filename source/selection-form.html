@@ -12,6 +12,7 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
+
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -48,55 +49,63 @@
         <p class="selection-form__phrase">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
         <form class="enter-value" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="enter-value__list">
-            <li class="enter-value__form">
-              <label class="enter-value__label" for="name">Имя:*</label>
-              <input class="enter-value__input" type="text" name="name" id="name" placeholder="Барсик" required>
-            </li>
-            <li class="enter-value__form">
-              <label class="enter-value__label" for="weight">Вес (кг):*</label>
-              <input class="enter-value__input" type="text" name="name" id="weight" placeholder="7" required>
-            </li>
-            <li class="enter-value__form">
-              <label class="enter-value__label" for="age">Возраст (лет):</label>
-              <input class="enter-value__input" type="text" name="name" id="age" placeholder="7">
-            </li>
-          </ul>
-          <fieldset class="nutrition-program">
-            <legend class="visually-hidden">Выберете программу</legend>
-            <ul class="nutrition-program__list">
-              <li class="nutrition-program__form">
-                <input class="nutrition-program__input visually-hidden" type="radio" name="nutrition-program"
-                  value="slim-cat" id="slim-cat" checked>
-                <label class="nutrition-program__label" for="slim-cat">Похудение</label>
+          <section class="enter-value__wrapper">
+            <ul class="enter-value__list">
+              <li class="enter-value__form">
+                <label class="enter-value__label" for="name">Имя:*</label>
+                <input class="enter-value__input" type="text" name="name" id="name" placeholder="Барсик" required>
               </li>
-              <li class="nutrition-program__form">
-                <input class="nutrition-program__input visually-hidden" type="radio" name="nutrition-program"
-                  value="fat-cat" id="fat-cat">
-                <label class="nutrition-program__label" for="fat-cat">Набор массы</label>
+              <li class="enter-value__form">
+                <label class="enter-value__label" for="weight">Вес (кг):*</label>
+                <input class="enter-value__input" type="text" name="weight" id="weight" placeholder="7" required>
               </li>
-              <li class="nutrition-program__form">
-                <input class="nutrition-program__input visually-hidden" type="radio" name="nutrition-program"
-                  value="cat-other" id="cat-other">
-                <label class="nutrition-program__label" for="cat-other">Не знаю (нужен ваш совет)</label>
+              <li class="enter-value__form">
+                <label class="enter-value__label" for="age">Возраст (лет):</label>
+                <input class="enter-value__input" type="text" name="old" id="age" placeholder="7">
               </li>
             </ul>
-          </fieldset>
+            <fieldset class="nutrition-program">
+              <legend class="visually-hidden">Выберете программу</legend>
+              <ul class="nutrition-program__list">
+                <li class="nutrition-program__form">
+                  <input class="nutrition-program__input visually-hidden" type="radio" name="nutrition-program"
+                    value="slim-cat" id="slim-cat" checked>
+                  <label class="nutrition-program__label" for="slim-cat">Похудение</label>
+                </li>
+                <li class="nutrition-program__form">
+                  <input class="nutrition-program__input visually-hidden" type="radio" name="nutrition-program"
+                    value="fat-cat" id="fat-cat">
+                  <label class="nutrition-program__label" for="fat-cat">Набор массы</label>
+                </li>
+                <li class="nutrition-program__form">
+                  <input class="nutrition-program__input visually-hidden" type="radio" name="nutrition-program"
+                    value="cat-other" id="cat-other">
+                  <label class="nutrition-program__label" for="cat-other">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
           <section class="owner-cat">
-            <h2 class="owner-cat__heading">Контактные данные
-              (владельца кота)</h2>
+            <div class="owner-cat__wrapper-heading">
+              <h2 class="owner-cat__heading-position">
+                <span class="owner-cat__heading">Контактные данные
+                  (владельца кота)
+                </span>
+              </h2>
+            </div>
             <ul class="owner-cat__list">
               <li class="owner-cat__item">
                 <label class="owner-cat__label" for="email">E-mail:*</label>
                 <input class="owner-cat__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
                   required>
-                  <svg class="owner-cat__icon-mail" width="19" height="14">
-                    <use xlink:href="img/sprite.svg#icon_mail"></use>
-                    </svg>
+                <svg class="owner-cat__icon-mail" width="19" height="14">
+                  <use xlink:href="img/sprite.svg#icon_mail"></use>
+                </svg>
               </li>
               <li class="owner-cat__item">
                 <label class="owner-cat__label" for="phone">Телефон:*</label>
-                <input class="owner-cat__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="owner-cat__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90"
+                  required>
                 <svg class="owner-cat__icon-phone" width="20" height="21">
                   <use xlink:href="img/sprite.svg#icon_phone"></use>
                 </svg>
@@ -104,31 +113,47 @@
             </ul>
           </section>
           <section class="comments-form">
-            <label class="comments-form__name" for="letter-text">Комментарий:</label>
+            <div class="ocomments-form__wrapper-label">
+              <label class="comments-form__label-position" for="letter-text">
+                <span class="comments-form__label-name">
+                  Комментарий:
+                </span>
+              </label>
+            </div>
             <textarea class="comments-form__text" name="text" id="letter-text"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </section>
-          <fieldset class="additionally-info">
-            <legend class="additionally-info__name">Дополнительно</legend>
-            <ul class="additionally-info__list">
-              <li class="additionally-info__item additionally-select">
-                <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally" id="filter-sugar" checked>
-                <label class="additionally-select__label" for="filter-sugar">Сахарозаменитель</label>
-              </li>
-              <li class="additionally-info__item additionally-select">
-                <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally" id="filter-water">
-                <label class="additionally-select__label" for="filter-water">Питьевая вода</label>
-              </li>
-              <li class="additionally-info__item additionally-select">
-                <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally" id="filter-milk">
-                <label class="additionally-select__label" for="filter-milk">Молоко</label>
-              </li>
-              <li class="additionally-info__item additionally-select">
-                <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally" id="filter-vitamines">
-                <label class="additionally-select__label" for="filter-vitamines">Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
+          <section class="additionally-info">
+            <fieldset class="additionally-info__wrapper-label">
+                <legend class="additionally-info__label-position">
+                  <span class="additionally-info__label-name">
+                    Дополнительно
+                  </span>
+                </legend>
+              <ul class="additionally-info__list">
+                <li class="additionally-info__item additionally-select">
+                  <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally"
+                    id="filter-sugar" checked>
+                  <label class="additionally-select__label" for="filter-sugar">Сахарозаменитель</label>
+                </li>
+                <li class="additionally-info__item additionally-select">
+                  <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally"
+                    id="filter-water">
+                  <label class="additionally-select__label" for="filter-water">Питьевая вода</label>
+                </li>
+                <li class="additionally-info__item additionally-select">
+                  <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally"
+                    id="filter-milk">
+                  <label class="additionally-select__label" for="filter-milk">Молоко</label>
+                </li>
+                <li class="additionally-info__item additionally-select">
+                  <input class="additionally-select__input visually-hidden" type="checkbox" name="additionally"
+                    id="filter-vitamines">
+                  <label class="additionally-select__label" for="filter-vitamines">Витамины</label>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
           <div class="selection-form__button-position">
             <button class="selection-form__button-send" type="submit">Отправить заявку</button>
             <small class="selection-form__stats-legend">
@@ -141,17 +166,17 @@
     <section class="contacts">
       <div class="contacts__wrapper contacts__wrapper--background">
         <div class="text-info">
-          <h2 class="text-info__heading">Приглашаем к&#160;сотрудничеству диллеров!</h2>
+          <h2 class="text-info__heading">Приглашаем к&#160;сотрудничеству дилеров!</h2>
           <div class="text-info___address">
             <p class="text-info__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="text-info__city">Санкт-Петербург</p>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.2094406549277!2d30.3235459!3d59.938701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627057628143!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen=""
-          title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.2094406549277!2d30.3235459!3d59.938701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627057628143!5m2!1sru!2sru"
+        width="320" height="362" allowfullscreen=""
+        title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
     </section>
   </main>
   <footer class="page-footer">
