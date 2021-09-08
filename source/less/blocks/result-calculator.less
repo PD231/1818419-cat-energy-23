@@ -4,11 +4,13 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1;
-    padding: 0;
+    padding: 0 30px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 15px;
+    padding: 0;
   }
 }
 
@@ -20,7 +22,7 @@
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    margin-bottom: 59px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,6 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 59px;
   }
 }
 
@@ -60,7 +63,7 @@
 
   @media (min-width: @tablet-width) {
     min-width: 162px;
-    min-height: 65px;
+    min-height: 77px;
     margin-top: 0;
 
     &:first-child {
@@ -69,7 +72,7 @@
 
     &:last-child {
       margin-right: 0;
-      margin-top: 10px;
+      margin-top: 0;
       flex-direction: column-reverse;
       align-items: flex-end;
       min-height: 30px;
@@ -86,7 +89,7 @@
       justify-content: flex-end;
       align-items: flex-end;
       margin: 0;
-      margin-top: 65px;
+      margin-top: 57px;
     }
   }
 }
@@ -105,16 +108,17 @@
     font-size: 30px;
     line-height: 37px;
     max-width: 200px;
+    margin-bottom: 5px;
   }
 }
 
 .result-calculator__description {
   font-family: "Arial", sans-serif;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   color: @special-dark-grey;
-  text-transform: uppercase;
+  text-transform: lowercase;
   width: 77px;
   text-align: center;
   background-color: @basic-grey;
@@ -127,15 +131,16 @@
   @media (min-width: @tablet-width) {
     width: 140px;
     min-height: 10px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     background-color: @basic-white;
     top: 63px;
-    left: 14px;
+    left: 10px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @basic-grey;
+    margin-top: 2px;
   }
 }
 

@@ -13,21 +13,17 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--background">
   <header class="page-header">
     <div class="page-header__wrapper">
-
-      <a class="page-header__logo-img" href="index.html">
+      <a class="page-header__logo-wrapper" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
-          <img src="img/logo-image.svg" width="33" height="37" alt="cat energy">
+          <img class="page-header__logo-img" src="img/logo-image.svg" width="33" height="37" alt="cat energy">
         </picture>
+        <img class="page-header__logo-name" src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
-      <a class="page-header__logo-name" href="index.html">
-        <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
-      </a>
-
       <nav class="main-nav main-nav--opened main-nav--no-js">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -115,7 +111,7 @@
         <h2 class="for-example__heading">Живой пример</h2>
         <p class="for-example__phrase">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-&#160;прежнему спит по
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16
           часов в день.</p>
         <div class="result-calculator">
@@ -154,7 +150,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/cat-slim-tablet-desktop.png 1x, img/cat-slim-tablet-desktop@2x.png 2x">
               <img loading="lazy" class="for-example__img-slim-cat" src="img/cat-slim.png"
-                srcset="img/cat-slim@2x.png 2x" width="251" height="240" alt="изображение худого кота Бориса">
+                srcset="img/cat-slim@2x.png 2x" width="251" height="240" alt="изображение худого кота Бориса" tabindex="0">
             </picture>
           </div>
           <div class="for-example__change change-slider">
@@ -215,8 +211,8 @@
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html Academy логотип">
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#icon_html-academy"></use>
           </svg>

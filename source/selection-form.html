@@ -16,15 +16,13 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-img" href="index.html">
+      <a class="page-header__logo-wrapper" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
-          <img src="img/logo-image.svg" width="33" height="37" alt="cat energy">
+          <img class="page-header__logo-img" src="img/logo-image.svg" width="33" height="37" alt="cat energy">
         </picture>
-      </a>
-      <a class="page-header__logo-name" href="index.html">
-        <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
+        <img class="page-header__logo-name" src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
       <nav class="main-nav main-nav--opened main-nav--no-js">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -113,7 +111,7 @@
             </ul>
           </section>
           <section class="comments-form">
-            <div class="ocomments-form__wrapper-label">
+            <div class="comments-form__wrapper-label">
               <label class="comments-form__label-position" for="letter-text">
                 <span class="comments-form__label-name">
                   Комментарий:
@@ -209,7 +207,7 @@
       </ul>
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html Academy логотип">
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#icon_html-academy"></use>
           </svg>
