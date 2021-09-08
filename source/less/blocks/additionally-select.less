@@ -8,6 +8,7 @@
   display: block;
   margin-top: 3px;
 
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -18,7 +19,7 @@
     cursor: pointer;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 250px;
     margin-left: 60px;
   }
@@ -30,14 +31,15 @@
   background: url("../img/icon-done.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 26px;
-  height: 26px;
-  top: 0;
-  left: 0;
+  width: 28px;
+  height: 28px;
+  top: -1px;
+  left: -1px;
 
   @media (min-width: @tablet-width) {
     width: 38px;
     height: 38px;
+    top: -4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,11 +52,11 @@
 .additionally-select__label::before {
   position: absolute;
   content: "";
-  border: 1px solid @dark-grey;
-  width: 26px;
-  height: 26px;
-  top: 0;
-  left: 0;
+  border: 1px solid @border-label-color;
+  width: 28px;
+  height: 28px;
+  top: -1px;
+  left: -1px;
 
   @media (min-width: @tablet-width) {
     width: 38px;
@@ -78,4 +80,14 @@
 .additionally-select__input:hover + .additionally-select__label::after,
 .additionally-select__label:hover::before {
   border-color: @border-label-color-hover;
+}
+
+.additionally-select__input:disabled + .additionally-select__label:hover::before,
+.additionally-select__input:disabled + .additionally-select__label {
+  border-color: @border-label-color;
+  cursor: default;
+}
+
+.additionally-select__input:focus + .additionally-select__label {
+  outline: 2px solid @basic-black;
 }

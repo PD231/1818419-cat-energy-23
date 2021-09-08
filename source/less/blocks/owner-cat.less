@@ -94,7 +94,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 76px;
     margin-bottom: 0;
-    padding: 0 70px;
+    padding: 0 66px 0 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -120,6 +120,7 @@
   @media (min-width: @desktop-width) {
     min-height: 52px;
     width: 47%;
+    padding-bottom: 20px;
   }
 }
 
@@ -136,12 +137,13 @@
     font-size: 20px;
     line-height: 30px;
     cursor: pointer;
+    margin-top: 0;
   }
 }
 
 .owner-cat__input {
   flex-grow: 1;
-  height: 45px;
+  height: 46px;
   box-sizing: border-box;
   margin-left: 10px;
   margin-top: 10px;
@@ -149,6 +151,8 @@
   border: 2px solid @dark-grey;
   padding-left: 14px;
   outline: none;
+  line-height: 46px;
+
 
   &::placeholder {
     font-family: "Oswald-regular", "Arial", sans-serif;
@@ -160,11 +164,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    height: 52px;
+    height: 51px;
     margin: 0;
     margin-left: 18px;
     padding-left: 20px;
     margin-top: 2px;
+    line-height: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
   }
 }
 
@@ -207,7 +216,13 @@
   right: 35px;
 
   @media (min-width: @tablet-width) {
-    right: 14px;
+    right: 16px;
+    top: 21px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    right: 19px;
     top: 21px;
   }
 }

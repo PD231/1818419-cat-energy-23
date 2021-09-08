@@ -11,7 +11,7 @@
     min-height: 200px;
     margin: 0 70px;
     box-sizing: border-box;
-    margin-top: 70px;
+    margin-top: 73px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,7 +56,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 30px;
-    margin-left: 35px;
+    margin-left: 37px;
     cursor: pointer;
   }
 
@@ -78,7 +78,7 @@
   border: 2px solid @border-label-color;
   border-radius: 50%;
   left: -47px;
-  top: -10px;
+  top: -7px;
 
   @media (min-width: @tablet-width) {
     width: 35px;
@@ -96,7 +96,7 @@
   width: 14px;
   height: 14px;
   left: -50px;
-  top: -13px;
+  top: -10px;
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
@@ -115,7 +115,7 @@
   border: 2px solid @border-label-color;
   border-radius: 50%;
   left: -47px;
-  top: -10px;
+  top: -7px;
 
   @media (min-width: @tablet-width) {
     width: 35px;
@@ -133,4 +133,14 @@
 .nutrition-program__input:hover + .nutrition-program__label::after,
 .nutrition-program__label:hover::before {
   border-color: @border-label-color-hover;
+}
+
+.nutrition-program__input:disabled + .nutrition-program__label:hover::before,
+.nutrition-program__input:disabled + .nutrition-program__label {
+  border-color: @border-label-color;
+  cursor: default;
+}
+
+.nutrition-program__input:focus + .nutrition-program__label {
+  outline: 2px solid @basic-black;
 }

@@ -22,9 +22,14 @@
 .additionally-info__wrapper-label {
   position: relative;
   border: none;
-  margin-top: 10px;
-  margin-bottom: 14px;
+  margin-top: 7px;
+  margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .additionally-info__label-position {
@@ -124,21 +129,22 @@
 
 .additionally-info__item {
   margin-top: 1px;
-  min-height: 43px;
   position: relative;
   padding-right: 50px;
   width: 200px;
   box-sizing: border-box;
+  min-height: 30px;
+  margin-bottom: 12px;
 
 
   @media (min-width: @tablet-width) {
-    width: 230px;
+    width: 232px;
     min-height: 40px;
     margin: 0;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 250px;
+    width: 245px;
   }
 }

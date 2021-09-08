@@ -12,6 +12,7 @@
     margin: 0 auto;
     width: 1220px;
     padding: 0 110px;
+    margin-bottom: 6px;
   }
 }
 
@@ -53,7 +54,7 @@
     min-width: 570px;
     min-height: 374px;
     margin: 0;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -187,7 +188,7 @@
   @media (min-width: @desktop-width) {
     width: 206px;
     height: 36px;
-    margin-top: 15px;
+    margin-top: 84px;
     margin-bottom: 73px;
     align-self: center;
     margin-left: 65px;
@@ -223,10 +224,10 @@
 
   @media (min-width: @desktop-width) {
     width: 467px;
-    height: 72px;
+    min-height: 72px;
     margin: 0;
     margin-left: 53px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 }
 
@@ -252,6 +253,7 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-left: 53px;
+    padding-top: 25px;
   }
 
   &:active {
@@ -272,6 +274,11 @@
   @media (min-width: @tablet-width) {
     top: 10px;
     left: 131px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 33px;
+    left: 132px;
   }
 }
 

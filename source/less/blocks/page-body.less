@@ -1,4 +1,26 @@
 .page-body {
-  min-height: 100%;
+  height: 100%;
   font-family: "Oswald-regular", "Arial", sans-serif;
+}
+
+.page-body--background::after {
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    position: absolute;
+    content: "";
+    height: 694px;
+    top: 0;
+    left: 50%;
+    z-index: -2;
+    background-image: url("../img/background-cat-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background-cat-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: right;
+    }
+  }
 }
